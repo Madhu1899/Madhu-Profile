@@ -19,6 +19,12 @@ section.short-films > section > article {
   margin-left: 5vw;
 }
 
+section.short-films > section > article > p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 section.short-films > section > article > button {
   cursor: pointer;
   box-sizing: content-box;

@@ -5,32 +5,38 @@ import './Stills.css'
 function Stills() {
   const stillsAlbumsLeft = [
     {
-      albumName: 'album 1',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'landscape',
+      albumName: 'Loreal',
+      albumSource: 'loreal',
+      albumLink: 'https://drive.google.com/drive/folders/1cL8DM5NZWhA-DOaEzOJmQO2yaTDZ2OUp?usp=sharing',
+      albumClass: 'portrait',
     },
     {
       albumName: 'album 2',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: '',
     },
     {
       albumName: 'album 3',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
-      albumClass: 'portrait',
+      albumClass: 'landscape',
     },
     {
       albumName: 'album 4',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: 'landscape',
     },
     {
       albumName: 'album 5',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: '',
     },
     {
       albumName: 'album 6',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: 'portrait',
     },
@@ -38,31 +44,37 @@ function Stills() {
   const stillsAlbumsRight = [
     {
       albumName: 'album 1',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: '',
     },
     {
       albumName: 'album 2',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: 'portrait',
     },
     {
       albumName: 'album 3',
+      albumSource: 'loreal',
       albumLink: 'https://www.google.com/',
       albumClass: 'landscape',
     },
     {
       albumName: 'album 4',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: '',
     },
     {
       albumName: 'album 5',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: 'portrait',
     },
     {
       albumName: 'album 6',
+      albumSource: 'about',
       albumLink: 'https://www.google.com/',
       albumClass: 'landscape',
     },
@@ -78,7 +90,7 @@ function Stills() {
       {stillsAlbumsLeft.map((album) => {
         return (
           <span key={`album${album.albumName}`}>
-            <img className={`album ${album.albumClass}`} src={ process.env.PUBLIC_URL + `/images/about.jpg` } alt="Madhusmita Das" />
+            <img className={`album ${album.albumClass}`} src={ process.env.PUBLIC_URL + `/images/${album.albumSource}.jpg` } alt="Madhusmita Das" />
             <span onClick={() => linkHandler(album.albumLink)}>{`${album.albumName}`}</span>
           </span>
         )
@@ -88,7 +100,7 @@ function Stills() {
       {stillsAlbumsRight.map((album) => {
         return (
           <span key={`album${album.albumName}`}>
-            <img className={`album ${album.albumClass}`} src={ process.env.PUBLIC_URL + `/images/about.jpg` } alt="Madhusmita Das" />
+            <img className={`album ${album.albumClass}`} src={ process.env.PUBLIC_URL + `/images/${album.albumSource}.jpg` } alt="Madhusmita Das" />
             <span onClick={() => linkHandler(album.albumLink)}>{`${album.albumName}`}</span>
           </span>
         )

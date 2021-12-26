@@ -34,7 +34,7 @@ function Info(props) {
     )
   } else if (infoIndex[props.heading] === 4) {
     return (
-      <div>{props.heading}</div>
+      < Collabs />
     )
   }
 }

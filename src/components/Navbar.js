@@ -8,24 +8,30 @@ function Navbar() {
   const toggler = useRef();
   const active = useRef(null);
   const highlightSection = () => {
-    let sections = document.querySelectorAll('section.container');
+    let sections, targetContainer, spans, done;
+    sections = document.querySelectorAll('section.container');
+    done = false;
     sections.forEach((section, i) => {
-      console.log(section);
-      if (0 < section.getBoundingClientRect().bottom - navbar.current.getBoundingClientRect().height) {
-        console.log('entered if');
-        if (active.current) {
-          console.log('entered second if');
-          document.querySelector(`span.nav-link:nth-child(${active.current + 1})`).classList.remove('active');
-          document.querySelector(`span.nav-link:nth-child(${i + 1})`).classList.add('active');
-          active.current = i;
-          return
+      if (done) return;
+      targetContainer = section.getBoundingClientRect().bottom - navbar.current.getBoundingClientRect().height;
+      if (0 < targetContainer) {
+        spans = document.querySelectorAll('span.nav-link');
+        if (active.current !== null) {
+          spans[active.current].classList.remove('active');
         }
-        document.querySelector(`span.nav-link:nth-child(${i + 1})`).classList.add('active');
+        spans[i].classList.add('active');
         active.current = i;
-        return
+        done = true;
       }
     });
   }
+  const scrollToSection = (section) => {
+    let sections = document.querySelectorAll('section.container');
+    window.scrollBy(0, sections[section].getBoundingClientRect().top);
+    setTimeout(() => {
+      highlightSection();
+    }, 500)
+  } 
   const toggleNav = () => {
     if (navOpen.current) {
       navbar.current.classList.add('closed');
@@ -42,11 +48,11 @@ function Navbar() {
 
   return (
     <nav ref={navbar} className='closed'>
-      <span className='nav-link'>ABOUT</span>
-      <span className='nav-link'>STILLS</span>
-      <span className='nav-link'>BTS</span>
-      <span className='nav-link'>SHORT FILMS</span>
-      <span className='nav-link'>COLLABS</span>
+      <span onClick={() => scrollToSection(0)} className='nav-link'>ABOUT</span>
+      <span onClick={() => scrollToSection(1)} className='nav-link'>STILLS</span>
+      <span onClick={() => scrollToSection(2)} className='nav-link'>BTS</span>
+      <span onClick={() => scrollToSection(3)} className='nav-link'>SHORT FILMS</span>
+      <span onClick={() => scrollToSection(4)} className='nav-link'>COLLABS</span>
       <span ref={toggler} onClick={toggleNav} className='hamburger'><i></i><i></i><i></i></span>
     </nav>
   )
