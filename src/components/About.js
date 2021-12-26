@@ -21,11 +21,6 @@ function About() {
         <p><strong>Theatre Actor</strong><br/>since<br/>( 2015 )</p>
       </section>
       <section className='work'>
-        <header>CREDIBILITY</header>
-        <p>Best two minute short film prize as a film maker, in a short film festival<br/>( 2020 )</p>
-        <p>Certified Actor from NCM<br/>( Kolkata )</p>
-      </section>
-      <section className='work'>
         <header>SKILLS</header>
         <p>Direction<br/>Acting<br/>Photography<br/>Video Editing<br/>Adobe Premier Pro<br/>Microsoft Office</p>
       </section>
