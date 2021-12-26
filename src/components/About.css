@@ -1,0 +1,35 @@
+section.about {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+section.about > section.intro {
+  flex-shrink: none;
+  padding: 0 1.5rem;
+}
+
+section.about > section.work {
+  flex-shrink: none;
+  padding: 0 1.5rem;
+  max-width: 12rem;
+}
+
+section.about > section.work p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+section.about > section.work p > strong {
+  color: #FFFFFF;
+}
+
+section.about p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding-bottom: 1.1rem;
+  max-width: 26rem;
+}

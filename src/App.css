@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section.container {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 150vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+section.container > img.section-bg {
+  position: absolute;
+  top: 0;
+  height: 120vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -100;
+}
+
+section.container > header {
+  cursor: default;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+section.info-container {
+  display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  box-sizing: border-box;
+  padding: 2rem;
+  color: #DDDDDD;
+  background-color: #191A19;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+section.info-container.expand {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section.container > button.toggle, section.info-container > button.toggle {
+  cursor: pointer;
+  box-sizing: content-box;
+  font-size: 1.75rem;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  border-radius: 100%;
+  outline: solid #FFFFFF 1px;
+
+  transition: 0.3s;
+}
+
+section.container > button.toggle:hover, section.info-container > button.toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: solid rgba(255, 255, 255, 0.25) 1px;
 }

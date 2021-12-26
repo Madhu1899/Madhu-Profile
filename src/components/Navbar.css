@@ -1,0 +1,78 @@
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  padding-right: 3rem;
+  background-color: #191A19;
+  z-index: 2;
+
+  transition: 0.5s;
+}
+
+nav.closed {
+  top: -3rem;
+}
+
+nav > span.nav-link {
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #DDDDDD;
+  padding: 1rem 0;
+  margin: 0 3vw;
+
+  transition: 0.3s;
+}
+
+nav > span.nav-link.active {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+nav > span.hamburger, nav > span.cross {
+  cursor: pointer;
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+nav > span.hamburger > i, nav > span.cross > i {
+  display: block;
+  height: 2px;
+  width: 2rem;
+  margin: calc(3rem * 0.4 / 3);
+  background-color: #FFFFFF;
+
+  transition: 0.3s;
+}
+
+nav > span.cross > i {
+  width: 1.5rem;
+  opacity: 0;
+}
+
+nav > span.cross > i:first-child {
+  opacity: 1;
+  transform: rotateZ(45deg);
+  transform-origin: left top;
+}
+
+nav > span.cross > i:last-child {
+  opacity: 1;
+  transform: rotateZ(-45deg);
+  transform-origin: left bottom;
+}
+
+@media only screen and (max-width: 815px) {
+  nav > span.nav-link {
+    font-size: 0.8rem;
+  }
+}

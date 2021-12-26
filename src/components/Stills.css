@@ -1,0 +1,93 @@
+section.stills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.stills > section > span {
+  position: relative;
+  display: block;
+}
+
+section.stills > section > span > img.album {
+  width: 35vw;
+  height: 35vw;
+  margin: 2.5vw;
+  object-fit: cover;
+}
+
+section.stills > section > span > img.album.landscape {
+  height: 20vw;
+  width: 35vw;
+}
+
+section.stills > section > span > img.album.portrait {
+  height: 45vw;
+  width: 35vw;
+}
+
+section.stills > section > span > span:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section.stills > section > span > span {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 2.5vw;
+  left: 2.5vw;
+  height: calc(100% - 5vw - 4px);
+  width: calc(100% - 5vw);
+  color: #000000;
+  opacity: 0;
+
+  transition: opacity 0.3s;
+}
+
+@media only screen and (max-width: 815px) {
+  section.stills {
+    flex-direction: column;
+  }
+
+  section.stills > section {
+    width: 100%;
+  }
+
+  section.stills > section > span > img.album {
+    width: 80vw;
+    height: 80vw;
+    margin: 2.5vw 0;
+  }
+
+  section.stills > section > span > img.album.landscape {
+    height: 50vw;
+    width: 80vw;
+  }
+
+  section.stills > section > span > img.album.portrait {
+    height: 120vw;
+    width: 80vw;
+  }
+
+  section.stills > section > span > span {
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    box-sizing: border-box;
+    top: auto;
+    bottom: calc(2.5vw + 4px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    background-image: linear-gradient(transparent calc(100% - 1.5rem), rgba(255, 255, 255, 0.4) 1.5rem);
+    opacity: 1;
+  }
+
+  section.stills > section > span > span:hover {
+    background-color: transparent;
+  }
+}

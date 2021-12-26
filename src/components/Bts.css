@@ -1,0 +1,60 @@
+section.bts > span {
+  position: relative;
+  display: block;
+}
+
+section.bts > span > img.project {
+  width: 50vw;
+  height: 30vw;
+  margin: 2.5vw 15vw;
+  object-fit: cover;
+}
+
+section.bts span > span:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section.bts span > span {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 2.5vw;
+  left: 15vw;
+  height: calc(100% - 5vw - 4px);
+  width: calc(100% - 30vw);
+  color: #000000;
+  opacity: 0;
+
+  transition: opacity 0.3s;
+}
+
+@media only screen and (max-width: 815px) {
+  section.bts > span > img.project {
+    width: 80vw;
+    height: 50vw;
+    margin: 5vw 0;
+  }
+
+  section.bts span > span {
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    box-sizing: border-box;
+    top: auto;
+    bottom: calc(5vw + 4px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    background-image: linear-gradient(transparent calc(100% - 1.5rem), rgba(255, 255, 255, 0.4) 1.5rem);
+    opacity: 1;
+  }
+
+  section.bts span > span:hover {
+    background-color: transparent;
+  }
+}
