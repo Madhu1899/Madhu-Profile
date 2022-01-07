@@ -6,6 +6,7 @@ function ShortFilms() {
   const shortFilmProjects = [
     {
       name: 'Yaadein',
+      poster: 'Yaadein_poster',
       link: 'https://drive.google.com/file/d/1TFFyt-cL_JqrY8xf6STB6_gc99H-QUBt/view?usp=sharing',
       genre: 'Independent Student short film, Heartwarming',
       duration : '2 mins 47secs',
@@ -14,6 +15,7 @@ function ShortFilms() {
     },
     {
       name: 'project 2',
+      poster: 'about',
       link: 'https://www.google.com/',
       genre: 'Lorem ipsum',
       duration : '2 mins 47secs',
@@ -22,6 +24,7 @@ function ShortFilms() {
     },
     {
       name: 'project 3',
+      poster: 'about',
       link: 'https://www.google.com/',
       genre: 'Lorem ipsum',
       duration : '2 mins 47secs',
@@ -39,15 +42,28 @@ function ShortFilms() {
     {shortFilmProjects.map((project) => {
       return (
         <section key={`project${project.name}`}>
-          <img className='project' src={ process.env.PUBLIC_URL + `/images/about.jpg` } alt="Madhusmita Das" />
+          <img className='project' src={ process.env.PUBLIC_URL + `/images/${project.poster}.jpg` } alt="Madhusmita Das" />
           <article>
             <header>{`${project.name.toUpperCase()}`}</header>
-            <p><span>Genre : </span>{`${project.genre}`}</p>
-            <p><span>Duration : </span>{`${project.duration}`}</p>
-            <p><span>Filmmaker : </span>{`${project.filmmaker}`}</p>
-            <p><span>Synopsis : </span>{`${project.synopsis}`}</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td><strong>Genre</strong> <span>:</span></td>
+                  <td>{`${project.genre}`}</td>
+                </tr>
+                <tr>
+                  <td><strong>Duration</strong> <span>:</span></td>
+                  <td>{`${project.duration}`}</td>
+                </tr>
+                <tr>
+                  <td><strong>Filmmaker</strong> <span>:</span></td>
+                  <td>{`${project.filmmaker}`}</td>
+                </tr>
+              </tbody>
+            </table>
             <button onClick={() => linkHandler(project.link)}><i className='arrow'></i></button>
           </article>
+          <p>{`${project.synopsis}`}</p>
         </section>
       )
     })}
