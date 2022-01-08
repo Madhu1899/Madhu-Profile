@@ -8,14 +8,14 @@ section.short-films > section {
 }
 
 section.short-films > section > img.project {
-  width: 50vw;
-  height: 30vw;
+  width: 25vw;
+  height: 35vw;
   margin-left: 5vw;
   object-fit: cover;
 }
 
 section.short-films > section > article {
-  width: 20vw;
+  width: 45vw;
   min-width: 12rem;
   margin-left: 5vw;
 }
@@ -67,17 +67,11 @@ section.short-films > section > article > button > i {
   transform: rotate(-45deg);
 }
 
-section.short-films > section > p {
-  font-size: 0.9rem;
-  font-weight: 500;
-  line-height: 2.2rem;
-  margin: 2rem auto 2rem 5vw;
-}
 
 @media only screen and (max-width: 815px) {
   section.short-films > section > img.project {
     width: 70vw;
-    height: 40vw;
+    height: 100vw;
     margin-left: 5vw;
   }
   
@@ -89,9 +83,5 @@ section.short-films > section > p {
   section.short-films > section > article > button {
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
-
-  section.short-films > section > p {
-    margin: 0 auto 2rem 5vw;
   }
 }
