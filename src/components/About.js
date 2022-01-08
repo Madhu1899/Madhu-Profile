@@ -13,16 +13,10 @@ function About() {
       </section>
       <section className='work'>
         <header>EXPERIENCE</header>
-        <p><strong>Intern AD</strong><br/>in a Disney+Hotstar Series "Ankahee Ansuni", released on 15th july<br/>( 2021 )</p>
-        <p><strong>Director/filmmaker</strong><br/>of three independent short films<br/>( 2020-2021 )</p>
-        <p><strong>Photographer/Videographer</strong><br/>for Loreal Matrix Events, August<br/>( 2019-2021 )</p>
-        <p><strong>Photographer</strong><br/>at E02 events & Films, for Zee5 Comedy Show, June<br/>( 2019 )</p>
-        <p><strong>Stage Manager</strong><br/>at Thespo Theatre Association, December<br/>( 2018-2020 )</p>
-        <p><strong>Theatre Actor</strong><br/>since<br/>( 2015 )</p>
-      </section>
-      <section className='work'>
-        <header>SKILLS</header>
-        <p>Direction<br/>Acting<br/>Photography<br/>Video Editing<br/>Adobe Premier Pro<br/>Microsoft Office</p>
+        <p><strong>Intern AD at</strong><br/>Web Series - Ankahi Ansuni | Jhaagi Files  Disney+Hotstar | Released on 15th july ( 2021 )</p>
+        <p><strong>Short Filmmaker of</strong><br/>Locked ( 2020 ) | Yaadein ( 2000 ) | The Shell ( 2021 )</p>
+        <p><strong>Behind the Scene Photo/Videographer at</strong><br/>Zee5 - Comedy Shots | E02 events & Films | June ( 2019 )<br/>Loreal Matrix Events | August ( 2019 ) - January ( 2021 )<br/>Amazon Prime Series - Modern Love | Episode - Cutting Chai | December ( 2021 )</p>
+        <p><strong>Stage Manager / Volunteer at</strong><br/>Thespo Theatre Association | December ( 2018-2020 )<br/>Theatre Actor |  (since 2015 )</p>
       </section>
     </section>
   )
