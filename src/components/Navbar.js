@@ -52,7 +52,7 @@ function Navbar() {
       <span onClick={() => scrollToSection(1)} className='nav-link'>STILLS</span>
       <span onClick={() => scrollToSection(2)} className='nav-link'>BTS</span>
       <span onClick={() => scrollToSection(3)} className='nav-link'>SHORT FILMS</span>
-      <span onClick={() => scrollToSection(4)} className='nav-link'>COLLABS</span>
+      <span onClick={() => scrollToSection(4)} className='nav-link'>VIDEOS</span>
       <span ref={toggler} onClick={toggleNav} className='hamburger'><i></i><i></i><i></i></span>
     </nav>
   )

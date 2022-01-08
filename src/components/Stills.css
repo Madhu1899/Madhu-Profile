@@ -25,13 +25,14 @@ section.stills > section > span > img.album.portrait {
   width: 35vw;
 }
 
-section.stills > section > span > span:hover {
+/* section.stills > section > span > span:hover {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
-}
+} */
 
 section.stills > section > span > span {
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: default;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -72,7 +73,7 @@ section.stills > section > span > span {
     width: 80vw;
   }
 
-  section.stills > section > span > span {
+  /* section.stills > section > span > span {
     justify-content: flex-start;
     align-items: flex-end;
 
@@ -85,9 +86,9 @@ section.stills > section > span > span {
     padding: 0 1rem;
     background-image: linear-gradient(transparent calc(100% - 1.5rem), rgba(255, 255, 255, 0.4) 1.5rem);
     opacity: 1;
-  }
+  } */
 
-  section.stills > section > span > span:hover {
+  /* section.stills > section > span > span:hover {
     background-color: transparent;
-  }
+  } */
 }

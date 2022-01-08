@@ -3,7 +3,7 @@ import About from './About'
 import Stills from './Stills'
 import Bts from './Bts'
 import ShortFilms from './ShortFilms'
-import Collabs from './Collabs'
+import Videos from './Videos'
 
 import './Info.css'
 
@@ -13,7 +13,7 @@ function Info(props) {
     'STILLS': 1,
     'BTS': 2,
     'SHORT FILMS': 3,
-    'COLLABS': 4,
+    'VIDEOS': 4,
   };
 
   if (infoIndex[props.heading] === 0) {
@@ -34,7 +34,7 @@ function Info(props) {
     )
   } else if (infoIndex[props.heading] === 4) {
     return (
-      < Collabs />
+      < Videos />
     )
   }
 }

@@ -5,83 +5,96 @@ import './Stills.css'
 function Stills() {
   const stillsAlbumsLeft = [
     {
-      albumName: 'Loreal',
-      albumSource: 'loreal',
-      albumLink: 'https://drive.google.com/drive/folders/1cL8DM5NZWhA-DOaEzOJmQO2yaTDZ2OUp?usp=sharing',
-      albumClass: 'portrait',
+      name: 'Loreal',
+      source: 'loreal_1',
+      link: 'https://drive.google.com/drive/folders/1cL8DM5NZWhA-DOaEzOJmQO2yaTDZ2OUp?usp=sharing',
+      class: 'portrait',
     },
     {
-      albumName: 'album 2',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: '',
+      name: 'Theatre',
+      source: 'theatre_2',
+      link: 'https://www.google.com/',
+      class: 'landscape',
     },
     {
-      albumName: 'album 3',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'landscape',
+      name: 'Theatre',
+      source: 'theatre_1',
+      link: 'https://www.google.com/',
+      class: '',
     },
     {
-      albumName: 'album 4',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'landscape',
+      name: 'Modern Love',
+      source: 'mdLove_3',
+      link: 'https://www.google.com/',
+      class: 'landscape',
     },
     {
-      albumName: 'album 5',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: '',
+      name: 'Theatre',
+      source: 'theatre_3',
+      link: 'https://www.google.com/',
+      class: 'landscape',
     },
     {
-      albumName: 'album 6',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'portrait',
+      name: 'Theatre',
+      source: 'theatre_4',
+      link: 'https://www.google.com/',
+      class: '',
+    },
+    {
+      name: 'Loreal',
+      source: 'loreal_2',
+      link: 'https://www.google.com/',
+      class: 'portrait',
     },
   ];
   const stillsAlbumsRight = [
     {
-      albumName: 'album 1',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: '',
+      name: 'Modern Love',
+      source: 'mdLove_2',
+      link: 'https://www.google.com/',
+      class: 'landscape',
     },
     {
-      albumName: 'album 2',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'portrait',
+      name: 'Modern Love',
+      source: 'mdLove_1',
+      link: 'https://www.google.com/',
+      class: '',
     },
     {
-      albumName: 'album 3',
-      albumSource: 'loreal',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'landscape',
+      name: 'Modern Love',
+      source: 'mdLove_4',
+      link: 'https://www.google.com/',
+      class: 'portrait',
     },
     {
-      albumName: 'album 4',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: '',
+      name: 'Loreal',
+      source: 'loreal_4',
+      link: 'https://www.google.com/',
+      class: 'landscape',
     },
     {
-      albumName: 'album 5',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'portrait',
+      name: 'Modern Love',
+      source: 'mdLove_5',
+      link: 'https://www.google.com/',
+      class: '',
     },
     {
-      albumName: 'album 6',
-      albumSource: 'about',
-      albumLink: 'https://www.google.com/',
-      albumClass: 'landscape',
+      name: 'Modern Love',
+      source: 'mdLove_6',
+      link: 'https://www.google.com/',
+      class: 'portrait',
+    },
+    {
+      name: 'Loreal',
+      source: 'loreal_3',
+      link: 'https://www.google.com/',
+      class: 'landscape',
     },
   ];
 
   const linkHandler = (link) => {
-    window.open(link);
+    // window.open(link);
+    return
   }
 
   return (
@@ -89,9 +102,9 @@ function Stills() {
       <section>
       {stillsAlbumsLeft.map((album) => {
         return (
-          <span key={`album${album.albumName}`}>
-            <img className={`album ${album.albumClass}`} src={ process.env.PUBLIC_URL + `/images/${album.albumSource}.jpg` } alt="Madhusmita Das" />
-            <span onClick={() => linkHandler(album.albumLink)}>{`${album.albumName}`}</span>
+          <span key={`album${album.name}`}>
+            <img className={`album ${album.class}`} src={ process.env.PUBLIC_URL + `/images/${album.source}.jpg` } alt="Madhusmita Das" />
+            <span onClick={() => linkHandler(album.link)}>{`${album.name}`}</span>
           </span>
         )
       })}
@@ -99,9 +112,9 @@ function Stills() {
       <section>
       {stillsAlbumsRight.map((album) => {
         return (
-          <span key={`album${album.albumName}`}>
-            <img className={`album ${album.albumClass}`} src={ process.env.PUBLIC_URL + `/images/${album.albumSource}.jpg` } alt="Madhusmita Das" />
-            <span onClick={() => linkHandler(album.albumLink)}>{`${album.albumName}`}</span>
+          <span key={`album${album.name}`}>
+            <img className={`album ${album.class}`} src={ process.env.PUBLIC_URL + `/images/${album.source}.jpg` } alt="Madhusmita Das" />
+            <span onClick={() => linkHandler(album.link)}>{`${album.name}`}</span>
           </span>
         )
       })}

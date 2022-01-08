@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Collabs() {
+import './Videos.css'
+
+function Videos() {
   return (
     <div>MyComponent</div>
   )
 }
 
-export default Collabs
+export default Videos

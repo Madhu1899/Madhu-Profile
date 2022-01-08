@@ -11,7 +11,7 @@ function App() {
     < Section heading ='STILLS' bgImage ='stills' />
     < Section heading ='BTS' bgImage ='bts' />
     < Section heading ='SHORT FILMS' bgImage ='short films' />
-    < Section heading ='COLLABS' bgImage ='collabs' />
+    < Section heading ='VIDEOS' bgImage ='videos' />
     </>
   );
 }
