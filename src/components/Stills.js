@@ -102,7 +102,7 @@ function Stills() {
       <section>
       {stillsAlbumsLeft.map((album) => {
         return (
-          <span key={`album${album.name}`}>
+          <span key={`album${album.source}`}>
             <img className={`album ${album.class}`} src={ process.env.PUBLIC_URL + `/images/${album.source}.jpg` } alt="Madhusmita Das" />
             <span onClick={() => linkHandler(album.link)}>{`${album.name}`}</span>
           </span>
@@ -112,7 +112,7 @@ function Stills() {
       <section>
       {stillsAlbumsRight.map((album) => {
         return (
-          <span key={`album${album.name}`}>
+          <span key={`album${album.source}`}>
             <img className={`album ${album.class}`} src={ process.env.PUBLIC_URL + `/images/${album.source}.jpg` } alt="Madhusmita Das" />
             <span onClick={() => linkHandler(album.link)}>{`${album.name}`}</span>
           </span>
