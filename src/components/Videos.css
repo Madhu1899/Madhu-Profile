@@ -1,0 +1,35 @@
+section.videos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.videos > iframe {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: solid #191A19 2px;
+  outline-offset: -1px;
+}
+
+section.videos > iframe.main-video.enlarge {
+  width: 80vw;
+  height: 45vw;
+}
+
+section.videos > iframe.video.enlarge {
+  width: 40vw;
+  height: 22.5vw;
+}
+
+section.videos > iframe.video {
+  width: calc(80vw / 3);
+  height: calc(40vw / 3);
+}
+
+
+@media only screen and (max-width: 815px) {
+  section.videos > iframe.main-video.enlarge, section.videos > iframe.video.enlarge, section.videos > iframe.video {
+    width: 80vw;
+    height: 45vw;
+    margin: 1rem 0;
+  }
+}
