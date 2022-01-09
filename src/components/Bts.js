@@ -5,28 +5,16 @@ import './Bts.css'
 function Bts() {
   const btsProjects = [
     {
-      projectName: 'project 1',
-      projectLink: 'https://www.google.com/',
+      projectName: 'Amazon Prime Series',
+      projectLink: 'https://drive.google.com/drive/folders/1Cr1xFtKd-tc9zGy4-PXHqO5b6S0cj_aw?usp=sharing',
     },
     {
-      projectName: 'project 2',
-      projectLink: 'https://www.google.com/',
+      projectName: 'TVC - Green Tea',
+      projectLink: 'https://drive.google.com/drive/folders/1ZUtGaFOoXy4Fnrz8NAYDpyI6skCVn43Y?usp=sharing',
     },
     {
-      projectName: 'project 3',
-      projectLink: 'https://www.google.com/',
-    },
-    {
-      projectName: 'project 4',
-      projectLink: 'https://www.google.com/',
-    },
-    {
-      projectName: 'project 5',
-      projectLink: 'https://www.google.com/',
-    },
-    {
-      projectName: 'project 6',
-      projectLink: 'https://www.google.com/',
+      projectName: 'ZEE5 - Comedy Shots',
+      projectLink: 'https://drive.google.com/drive/folders/1ZVs74Ee152wIyFGWQaFbUipk3dwbeyiT?usp=sharing',
     },
   ];
 

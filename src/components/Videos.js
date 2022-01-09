@@ -10,55 +10,31 @@ function Videos() {
     },
     {
       id: 1,
-      link: "https://www.youtube.com/embed/Yxm-EtvrjMQ",
-    },
-    {
-      id: 2,
-      link: "https://www.youtube.com/embed/nk9jlsfqGy4",
-    },
-    {
-      id: 3,
       link: "https://www.youtube.com/embed/rpS9mpM4qMk",
     },
     {
-      id: 4,
-      link: "https://www.youtube.com/embed/EzRigHh0hHk",
-    },
-    {
-      id: 5,
-      link: "https://www.youtube.com/embed/eIFkx3dudVg",
-    },
-    {
-      id: 6,
-      link: "https://www.youtube.com/embed/b0yvo1Yxf8s",
-    },
-    {
-      id: 7,
+      id: 2,
       link: "https://www.youtube.com/embed/A0sZsrLX-io",
     },
     {
-      id: 8,
+      id: 3,
       link: "https://www.youtube.com/embed/Swl31im_Pzs",
     },
     {
-      id: 9,
+      id: 4,
       link: "https://www.youtube.com/embed/FOWja84lTYs",
     },
     {
-      id: 10,
+      id: 5,
       link: "https://www.youtube.com/embed/b6ZYlIYNQb8",
     },
     {
-      id: 11,
+      id: 6,
       link: "https://www.youtube.com/embed/G31m3uFJZhM",
     },
     {
-      id: 12,
+      id: 7,
       link: "https://www.youtube.com/embed/i3xjYKo_6fM",
-    },
-    {
-      id: 13,
-      link: "https://www.youtube.com/embed/x2dqFrECnrM",
     },
   ]
   return (
