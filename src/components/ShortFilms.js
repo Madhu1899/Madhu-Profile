@@ -26,10 +26,10 @@ function ShortFilms() {
       name: 'Locked',
       poster: 'Locked_poster',
       link: 'https://drive.google.com/file/d/1o4P8WKxY-GoILVg6m0JldZUn0_pYiSKp/view?usp=sharing',
-      genre: 'Lorem ipsum',
-      duration : '2 mins 47secs',
+      genre: 'Independent, Open Interpretation , Psychological',
+      duration : '1 mins 37secs',
       filmmaker : 'Madhusmita Das',
-      synopsis : 'This film is based on a very simple life story of us, where we forget to acknowledge the close ones when they are always around us, but when they are not then we always recall them... This is a represenatation of such little things between a mother and son.',
+      synopsis : 'The transformation from a regular talkative girl into a silent patrified person along with the whole  transformed situation of the year 2020 , this film is a representation of how any changing situation can effect the mental health of a person and make them stuck in their own different time zone.',
     },
   ];
 
