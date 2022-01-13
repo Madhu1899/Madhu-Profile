@@ -1,5 +1,6 @@
-import Section from './components/Section'
 import Navbar from './components/Navbar'
+import Section from './components/Section'
+import Footer from './components/Footer'
 
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
     < Section heading ='BTS' bgImage ='bts' />
     < Section heading ='SHORT FILMS' bgImage ='short films' />
     < Section heading ='VIDEOS' bgImage ='videos' />
+    < Footer />
     </>
   );
 }

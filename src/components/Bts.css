@@ -17,6 +17,7 @@ section.bts span > span:hover {
 
 section.bts span > span {
   cursor: pointer;
+  box-sizing: border-box;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -24,10 +25,11 @@ section.bts span > span {
 
   top: 2.5vw;
   left: 15vw;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 100;
   height: calc(100% - 5vw - 4px);
   width: calc(100% - 30vw);
+  padding: 0 4rem;
   color: #FFFFFF;
   opacity: 0;
 
@@ -49,10 +51,12 @@ section.bts span > span {
     top: auto;
     bottom: calc(5vw + 4px);
     left: 0;
+    font-size: 0.8rem;
+    font-weight: 100;
     height: 100%;
     width: 100%;
     padding: 0 1rem;
-    background-image: linear-gradient(transparent calc(100% - 1.5rem), rgba(255, 255, 255, 0.4) 1.5rem);
+    background-image: linear-gradient(transparent calc(100% - 2.2rem), rgba(0, 0, 0, 0.6) 2.2rem);
     opacity: 1;
   }
 
