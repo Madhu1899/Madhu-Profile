@@ -6,19 +6,19 @@ function Videos() {
   const videos = [
     {
       id: 0,
-      link: "https://www.youtube.com/embed/iQTvKW5qijE",
+      link: "https://www.youtube.com/embed/i3xjYKo_6fM",
     },
     {
       id: 1,
-      link: "https://www.youtube.com/embed/rpS9mpM4qMk",
+      link: "https://www.youtube.com/embed/CnLY2Y7ld98",
     },
     {
       id: 2,
-      link: "https://www.youtube.com/embed/A0sZsrLX-io",
+      link: "https://www.youtube.com/embed/wWyclTvzX7k",
     },
     {
       id: 3,
-      link: "https://www.youtube.com/embed/Swl31im_Pzs",
+      link: "https://www.youtube.com/embed/G31m3uFJZhM",
     },
     {
       id: 4,
@@ -26,15 +26,23 @@ function Videos() {
     },
     {
       id: 5,
-      link: "https://www.youtube.com/embed/b6ZYlIYNQb8",
+      link: "https://www.youtube.com/embed/iQTvKW5qijE",
     },
     {
       id: 6,
-      link: "https://www.youtube.com/embed/G31m3uFJZhM",
+      link: "https://www.youtube.com/embed/rpS9mpM4qMk",
     },
     {
       id: 7,
-      link: "https://www.youtube.com/embed/i3xjYKo_6fM",
+      link: "https://www.youtube.com/embed/A0sZsrLX-io",
+    },
+    {
+      id: 8,
+      link: "https://www.youtube.com/embed/Swl31im_Pzs",
+    },
+    {
+      id: 9,
+      link: "https://www.youtube.com/embed/b6ZYlIYNQb8",
     },
   ]
   return (
