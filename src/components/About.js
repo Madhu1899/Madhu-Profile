@@ -13,10 +13,10 @@ function About() {
       </section>
       <section className='work'>
         <header>EXPERIENCE</header>
-        <p><strong>Intern AD at</strong><br/>Web Series - Ankahi Ansuni | Jhaagi Files  Disney+Hotstar | Released on 15th july ( 2021 )</p>
-        <p><strong>Short Filmmaker of</strong><br/>Locked ( 2020 ) | Yaadein ( 2000 ) | The Shell ( 2021 )</p>
-        <p><strong>Behind the Scene Photo/Videographer at</strong><br/>Zee5 - Comedy Shots | E02 events & Films | June ( 2019 )<br/>Loreal Matrix Events | August ( 2019 ) - January ( 2021 )<br/>Amazon Prime Series - Modern Love | Episode - Cutting Chai | December ( 2021 )</p>
-        <p><strong>Stage Manager / Volunteer at</strong><br/>Thespo Theatre Association | December ( 2018-2020 )<br/>Theatre Actor |  (since 2015 )</p>
+        <p><strong>Intern AD at</strong><br/>Ankahi Ansuni - Jhaagi Files (TV Program), by Disney+Hotstar | July ( 2021 )</p>
+        <p><strong>Behind the Scene Photo/Videographer at</strong><br/>Comedy Shots , a ZEE5 Original Show | June ( 2019 )<br/>L'Oréal Matrix Hair Transformation | August ( 2019 ) & January ( 2021 )<br/>Modern Love (TV Show) - episode : Cutting Chai, an Amazon Prime Show | December ( 2021 )</p>
+        <p><strong>Short Filmmaker of</strong><br/>Locked ( 2021 )<br/>Yaadein ( 2021 )<br/>The Shell ( 2021 )</p>
+        <p><strong>Theatre Experiences at</strong><br/>Thespo | Stage Manager, Photo/videographer ( 2018-2019 )<br/>Tata Lit Live | an AV ( Audio Visual technician ) , December ( 2019 )</p>
       </section>
     </section>
   )
