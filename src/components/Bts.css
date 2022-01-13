@@ -12,7 +12,7 @@ section.bts > span > img.project {
 
 section.bts span > span:hover {
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 section.bts span > span {
@@ -24,12 +24,13 @@ section.bts span > span {
 
   top: 2.5vw;
   left: 15vw;
+  font-size: 3rem;
   height: calc(100% - 5vw - 4px);
   width: calc(100% - 30vw);
-  color: #000000;
+  color: #FFFFFF;
   opacity: 0;
 
-  transition: opacity 0.3s;
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 815px) {
