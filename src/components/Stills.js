@@ -5,14 +5,32 @@ import './Stills.css'
 function Stills() {
   const stillsAlbumsLeft = [
     {
-      name: 'Loreal',
-      source: 'loreal_1',
-      link: 'https://drive.google.com/drive/folders/1cL8DM5NZWhA-DOaEzOJmQO2yaTDZ2OUp?usp=sharing',
+      name: 'Modern Love',
+      source: 'mdLove_4',
+      link: 'https://www.google.com/',
       class: 'portrait',
     },
     {
-      name: 'Theatre',
-      source: 'theatre_2',
+      name: 'Modern Love',
+      source: 'mdLove_3',
+      link: 'https://www.google.com/',
+      class: 'landscape',
+    },
+    {
+      name: 'Modern Love',
+      source: 'mdLove_5',
+      link: 'https://www.google.com/',
+      class: 'landscape',
+    },
+    {
+      name: 'Loreal',
+      source: 'loreal_1',
+      link: 'https://www.google.com/',
+      class: 'portrait',
+    },
+    {
+      name: 'Loreal',
+      source: 'loreal_3',
       link: 'https://www.google.com/',
       class: 'landscape',
     },
@@ -23,28 +41,10 @@ function Stills() {
       class: '',
     },
     {
-      name: 'Modern Love',
-      source: 'mdLove_3',
+      name: 'Theatre',
+      source: 'theatre_2',
       link: 'https://www.google.com/',
       class: 'landscape',
-    },
-    {
-      name: 'Theatre',
-      source: 'theatre_3',
-      link: 'https://www.google.com/',
-      class: 'landscape',
-    },
-    {
-      name: 'Theatre',
-      source: 'theatre_4',
-      link: 'https://www.google.com/',
-      class: '',
-    },
-    {
-      name: 'Loreal',
-      source: 'loreal_2',
-      link: 'https://www.google.com/',
-      class: 'portrait',
     },
   ];
   const stillsAlbumsRight = [
@@ -62,7 +62,7 @@ function Stills() {
     },
     {
       name: 'Modern Love',
-      source: 'mdLove_4',
+      source: 'mdLove_6',
       link: 'https://www.google.com/',
       class: 'portrait',
     },
@@ -73,20 +73,20 @@ function Stills() {
       class: 'landscape',
     },
     {
-      name: 'Modern Love',
-      source: 'mdLove_5',
-      link: 'https://www.google.com/',
-      class: '',
-    },
-    {
-      name: 'Modern Love',
-      source: 'mdLove_6',
+      name: 'Loreal',
+      source: 'loreal_2',
       link: 'https://www.google.com/',
       class: 'portrait',
     },
     {
-      name: 'Loreal',
-      source: 'loreal_3',
+      name: 'Theatre',
+      source: 'theatre_3',
+      link: 'https://www.google.com/',
+      class: 'landscape',
+    },
+    {
+      name: 'Theatre',
+      source: 'theatre_4',
       link: 'https://www.google.com/',
       class: 'landscape',
     },

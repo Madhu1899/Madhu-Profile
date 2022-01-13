@@ -8,6 +8,7 @@ section.short-films > section {
 }
 
 section.short-films > section > img.project {
+  cursor: pointer;
   width: 25vw;
   height: 35vw;
   margin-left: 5vw;

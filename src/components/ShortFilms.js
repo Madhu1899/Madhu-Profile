@@ -42,7 +42,7 @@ function ShortFilms() {
     {shortFilmProjects.map((project) => {
       return (
         <section key={`project${project.name}`}>
-          <img className='project' src={ process.env.PUBLIC_URL + `/images/${project.poster}.jpg` } alt="Madhusmita Das" />
+          <img onClick={() => linkHandler(project.link)} className='project' src={ process.env.PUBLIC_URL + `/images/${project.poster}.jpg` } alt="Madhusmita Das" />
           <article>
             <header>{`${project.name.toUpperCase()}`}</header>
             <table>
