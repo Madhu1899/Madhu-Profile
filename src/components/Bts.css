@@ -25,6 +25,7 @@ section.bts span > span {
   top: 2.5vw;
   left: 15vw;
   font-size: 3rem;
+  font-weight: 100;
   height: calc(100% - 5vw - 4px);
   width: calc(100% - 30vw);
   color: #FFFFFF;
