@@ -5,13 +5,17 @@ section.about {
 }
 
 section.about > section.intro {
+  box-sizing: border-box;
   flex-shrink: none;
   padding: 0 1.5rem;
+  width: 39%;
 }
 
 section.about > section.work {
+  box-sizing: border-box;
   flex-shrink: none;
   padding: 0 1.5rem;
+  width: 61%;
 }
 
 section.about > section.work p {
@@ -30,5 +34,15 @@ section.about p {
   font-size: 1.1rem;
   line-height: 1.6;
   padding-bottom: 1.1rem;
-  max-width: 26rem;
+}
+
+
+@media only screen and (max-width: 815px) {
+  section.about > section.intro {
+    width: 100%;
+  }
+  
+  section.about > section.work {
+    width: 100%;
+  }
 }
