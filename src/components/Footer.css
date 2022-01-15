@@ -1,4 +1,44 @@
 footer {
-  color: #DDDDDD;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 10vh 10vw;
+  min-height: 50vh;
   background-color: #191A19;
+}
+
+#identity, #contactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 5vw;
+}
+
+#madhu {
+  height: 25vw;
+  margin: 2.5vw;
+}
+
+#sign {
+  height: 5rem;
+  margin: 2.5vw;
+  filter: invert();
+}
+
+#contactInfo {
+  flex-direction: column;
+}
+
+footer > section > p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: #DDDDDD;
+}
+
+footer > section > p > strong {
+  color: #FFFFFF;
 }
