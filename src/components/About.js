@@ -6,9 +6,10 @@ function About() {
   return (
     <section className='about info'>
       <section className='intro'>
-        <header>INTRODUCTION</header>
-        <p>Madhusmita Das</p>
-        <p>I am an aspiring FilmMaker with experience of one web-series as an Intern AD and three independent short films. I am seeking a new work opportunity to gain more experience and explore my skills.</p>
+        <header>MADHUSMITA DAS</header>
+        <p>I am an aspiring Filmmaker with experience as freelancer BTS Photo/videographer, Intern AD and Independent Short Filmmaker.</p>
+        <p>New work opportunities excite me to explore my skills and gain more experience.</p>
+        <p>I am looking for new opportunities and to be a part of new exciting projects.</p>
       </section>
       <section className='work'>
         <header>EXPERIENCE</header>

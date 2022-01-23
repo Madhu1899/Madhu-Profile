@@ -68,6 +68,7 @@ section.bts span > span > p.desc2 {
     height: max-content;
     width: 100%;
     padding: 0 1rem;
+    padding-top: 0.25rem;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
   }
@@ -78,16 +79,18 @@ section.bts span > span > p.desc2 {
 
   section.bts span > span > header.name {
     font-size: 1rem;
-    margin: 0;
+    margin: 0 0.1rem;
   }
   
   section.bts span > span > p.desc1 {
     font-size: 1rem;
-    margin: 0;
+    margin: 0 0.1rem;
+    padding-bottom: 0.15rem;
   }
   
   section.bts span > span > p.desc2 {
     font-size: 1rem;
-    margin: 0;
+    margin: 0 0.2rem;
+    padding-bottom: 0.17rem;
   }
 }
