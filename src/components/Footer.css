@@ -9,7 +9,7 @@ footer {
   background-color: #191A19;
 }
 
-#identity, #contactInfo {
+#photo, #contactInfo {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -17,13 +17,13 @@ footer {
 }
 
 #madhu {
-  height: 25vw;
+  width: 25vw;
   margin: 2.5vw;
 }
 
 #sign {
   height: 5rem;
-  margin: 2.5vw;
+  margin: 0 2.5vw 2.5vw 0;
   filter: invert();
 }
 
@@ -41,4 +41,21 @@ footer > section > p {
 
 footer > section > p > strong {
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 815px) {
+  footer {
+    padding: 5vh 5vw;
+  }
+
+  #madhu {
+    width: 90vw;
+    height: 67.5vw;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  #contactInfo {
+    width: 100%;
+  }
 }
