@@ -9,7 +9,7 @@ function About() {
         <header>MADHUSMITA DAS</header>
         <p>I am an aspiring Filmmaker with experience as freelancer BTS Photo/videographer, Intern AD and Independent Short Filmmaker.</p>
         <p>New work opportunities excite me to explore my skills and gain more experience.</p>
-        <p>I am looking for new opportunities and to be a part of new exciting projects.</p>
+        <p>I am looking forward to get to be a part of more  new exciting projects.</p>
       </section>
       <section className='work'>
         <header>EXPERIENCE</header>
